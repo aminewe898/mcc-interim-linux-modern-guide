@@ -1,0 +1,23 @@
+megs: 8
+
+romimage: file=$BXSHARE/BIOS-bochs-latest
+vgaromimage: file=$BXSHARE/VGABIOS-lgpl-latest.bin
+
+boot: disk
+
+floppya: 1_44="C:\Users\amine\Downloads\nocdboot", status=inserted
+floppyb: 1_44="C:\Users\amine\Downloads\root", status=inserted
+
+ata0-master: type=disk, path="C:\Users\amine\Downloads\mcc-hdd.img", mode=flat, cylinders=306, heads=4, spt=17
+
+log: bochslog.txt
+
+panic: action=ask
+error: action=report
+info: action=report
+
+mouse: enabled=0
+
+cpu: count=1, ips=1000000
+
+clock: sync=none
