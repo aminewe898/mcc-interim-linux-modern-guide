@@ -5,10 +5,10 @@ vgaromimage: file=$BXSHARE/VGABIOS-lgpl-latest.bin
 
 boot: disk
 
-floppya: 1_44="C:\Users\amine\Downloads\nocdboot", status=inserted
-floppyb: 1_44="C:\Users\amine\Downloads\root", status=inserted
+floppya: 1_44="disks/nocdboot", status=inserted
+floppyb: 1_44="disks/root", status=inserted
 
-ata0-master: type=disk, path="C:\Users\amine\Downloads\mcc-hdd.img", mode=flat, cylinders=306, heads=4, spt=17
+ata0-master: type=disk, path="disks/mcc-hdd.img", mode=flat, cylinders=306, heads=4, spt=17
 
 log: bochslog.txt
 
